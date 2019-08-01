@@ -1,9 +1,16 @@
 from __future__ import unicode_literals
-
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
-from django.http import HttpResponse
+
+def login(request):
+    return render(request, 'vote_not_logged.html')
 
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+def home(request):
+    return render(request, 'home.html')
+
+
+@login_required
+def logged(request):
+    return render(request, 'vote_logged.html')

@@ -125,3 +125,11 @@ AUTHENTICATION_BACKENDS = [
     'social_core.backends.facebook.FacebookOAuth2',
     'django.contrib.auth.backends.ModelBackend',
 ]
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'logged'
+LOGOUT_URL = 'logout'
+LOGOUT_REDIRECT_URL = 'login'
+
+SOCIAL_AUTH_FACEBOOK_KEY = '2540056616079354'
+SOCIAL_AUTH_FACEBOOK_SECRET = '361fe4ac97ee466ec1be639b8cc1bd11'
