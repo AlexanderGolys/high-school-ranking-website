@@ -1,1 +1,1 @@
-# Ranking-LO
+# uczniowski.pl
