@@ -17,4 +17,4 @@ class Vote(models.Model):
     qb2 = models.BooleanField(default=False)
     qb3 = models.BooleanField(default=False)
     qb4 = models.BooleanField(default=False)
-    more_info = models.CharField(max_length=1000)
+    more_info = models.CharField(max_length=1000, default='')
