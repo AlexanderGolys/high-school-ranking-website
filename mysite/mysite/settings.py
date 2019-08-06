@@ -122,8 +122,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTHENTICATION_BACKENDS = [
-    'social_core.backends.facebook.FacebookOAuth2',
     'django.contrib.auth.backends.ModelBackend',
+    'social_core.backends.facebook.FacebookOAuth2',
 ]
 
 LOGIN_URL = 'login'
@@ -134,17 +134,12 @@ LOGOUT_REDIRECT_URL = 'login'
 SOCIAL_AUTH_FACEBOOK_KEY = '352036625735401'
 SOCIAL_AUTH_FACEBOOK_SECRET = '7513a75e7f8d27eee02db39125517634'
 
-# SOCIAL_AUTH_PIPELINE = (
-#     'social_core.pipeline.social_auth.social_details',
-#     'social_core.pipeline.social_auth.social_uid',
-#     'social_core.pipeline.social_auth.auth_allowed',
-#     'social_core.pipeline.social_auth.social_user',
-#     'social_core.pipeline.social_auth.associate_by_email',
-#     # 'social_core.pipeline.social_auth.get_username',
-#     'social_core.pipeline.social_auth.associate_user',
-#     'project.basic_vote.create_user.create_user',
-#     'social_core.pipeline.social_auth.load_extra_data',
-#     'social_core.pipeline.user.user_details',
-# )
 
 AUTH_USER_MODEL = 'basic_vote.CustomUser'
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_SAVE_EVERY_REQUEST = True
+SESSION_COOKIE_AGE = 86400 # sec
+SESSION_COOKIE_DOMAIN = None
+SESSION_COOKIE_NAME = 'DSESSIONID'
+SESSION_COOKIE_SECURE = False
