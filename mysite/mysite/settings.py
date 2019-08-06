@@ -133,3 +133,18 @@ LOGOUT_REDIRECT_URL = 'login'
 
 SOCIAL_AUTH_FACEBOOK_KEY = '352036625735401'
 SOCIAL_AUTH_FACEBOOK_SECRET = '7513a75e7f8d27eee02db39125517634'
+
+# SOCIAL_AUTH_PIPELINE = (
+#     'social_core.pipeline.social_auth.social_details',
+#     'social_core.pipeline.social_auth.social_uid',
+#     'social_core.pipeline.social_auth.auth_allowed',
+#     'social_core.pipeline.social_auth.social_user',
+#     'social_core.pipeline.social_auth.associate_by_email',
+#     # 'social_core.pipeline.social_auth.get_username',
+#     'social_core.pipeline.social_auth.associate_user',
+#     'project.basic_vote.create_user.create_user',
+#     'social_core.pipeline.social_auth.load_extra_data',
+#     'social_core.pipeline.user.user_details',
+# )
+
+AUTH_USER_MODEL = 'basic_vote.CustomUser'
