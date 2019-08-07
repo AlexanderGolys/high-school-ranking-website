@@ -7,6 +7,7 @@ from .managers import CustomUserManager
 
 
 class Vote(models.Model):
+    school = models.CharField(max_length=1000, default='XL LO')
     q1 = models.IntegerField()
     q2 = models.IntegerField()
     q3 = models.IntegerField()
