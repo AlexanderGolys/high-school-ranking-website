@@ -3,6 +3,12 @@
 {% block title %} Home {% endblock %}
 
 {% block content %}
+    <select>
+        {% for school in schools %}
+            <option value="{{ school.name }}">{{ school.name }}</option>
+        {% endfor %}
+    </select>
+    <br/>
     <form method="POST"> {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Save"/>
