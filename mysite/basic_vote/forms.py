@@ -4,6 +4,7 @@ from .models import Vote
 
 
 class VoteForm(forms.ModelForm):
+    school = forms.CharField(max_length=1000)
     q1 = forms.IntegerField()
     q2 = forms.IntegerField()
     q3 = forms.IntegerField()
@@ -21,7 +22,7 @@ class VoteForm(forms.ModelForm):
     class Meta:
         model = Vote
         fields = [
-            'q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7',
+            'school', 'q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7',
             'q8', 'qb1', 'qb2', 'qb3', 'qb4',
         ]
 
