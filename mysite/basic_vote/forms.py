@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import Vote
+from .models import Vote, School
 
 
 class VoteForm(forms.ModelForm):
@@ -25,6 +25,14 @@ class VoteForm(forms.ModelForm):
             'school', 'q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7',
             'q8', 'qb1', 'qb2', 'qb3', 'qb4',
         ]
+
+    def clean_school(self, *args, **kwargs):
+        school = self.cleaned_data.get("school")
+        schools = School.objects.all()
+        for s in schools:
+            if school == s.name:
+                return school
+        raise forms.ValidationError("Wybierz szkole z listy")
 
     def clean_q1(self, *args, **kwargs):
         q1 = self.cleaned_data.get("q1")
