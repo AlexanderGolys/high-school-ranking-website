@@ -1,13 +1,13 @@
 from __future__ import unicode_literals
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from basic_vote.models import CustomUser
-
+from basic_vote.models import CustomUser, School
 from .forms import VoteForm
 
 
 @login_required
 def vote_submit_view(request):
+    schools = School.objects.all()
     form = VoteForm(request.POST or None)
     if not request.user.has_answered:
         if form.is_valid():
@@ -17,7 +17,8 @@ def vote_submit_view(request):
             user.save()
             form = VoteForm()
         context = {
-            'form': form
+            'form': form,
+            'schools': schools,
         }
         return render(request, 'vote.html', context)
     else:

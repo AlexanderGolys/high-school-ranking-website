@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from django.contrib.auth.models import Group
 from django.contrib.auth.models import User
 
-from .models import Vote
+from .models import Vote, School
 
 from django import forms
 from django.contrib import admin
@@ -90,3 +90,4 @@ admin.site.unregister(Group)
 admin.site.register(CustomUser, UserAdmin)
 
 admin.site.register(Vote)
+admin.site.register(School)
