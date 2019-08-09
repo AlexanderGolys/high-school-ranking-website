@@ -27,7 +27,6 @@ class School(models.Model):
     name = models.CharField(max_length=1000)
 
 
-
 class CustomUser(AbstractUser):
     username = models.CharField(max_length=100, unique=True)
     email = models.EmailField()
