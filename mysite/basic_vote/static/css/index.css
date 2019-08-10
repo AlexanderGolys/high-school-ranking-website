@@ -1,27 +1,86 @@
-    img {
-      border: 3px solid #282c34;
-    }
-    .container-fluid {
-      height: 100vh;
-      background-color: #282c34;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .container-fluid > div {
-      width: 85%;
-      min-width: 300px;
-      max-width: 500px;
-    }
-    .card {
-      width: 100%;
-    }
-    .social-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .btn a, .btn a:hover {
-      color: white;
-      text-decoration: none ;
-    }
+@import url('https://fonts.googleapis.com/css?family=Cabin|Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #404245;
+}
+
+.logo:hover, .logo:visited, .logo:link, .logo:active
+{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+li, a, button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #22242A;
+}
+
+header nav {
+    background-color: #22242A;
+}
+
+header nav ul {
+    background-color: #22242A;
+}
+
+header nav ul li {
+    background-color: #22242A;
+}
+
+.logo {
+    font-family: 'Cabin', sans-serif;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.main__links {
+    list-style: none;
+}
+
+.main__links li {
+    display: inline-block;
+    padding: 10px 20px 0 20px;
+}
+
+.main__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.main__links li a:hover {
+    color: #e93f00;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(233, 63, 0, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(233, 63, 0, 0.7);
+
+}

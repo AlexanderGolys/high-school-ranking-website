@@ -4,6 +4,11 @@
 <head>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
     <link href="https://fonts.googleapis.com/css?family=Cabin|Open+Sans&display=swap" rel="stylesheet">
@@ -13,12 +18,15 @@
 </head>
 <body>
 <header>
-    <a href = "http://uczniowski.pl" class = "logo" >uczniowski.pl</a>
+    <a href = "http://uczniowski.pl" class="logo" >uczniowski.pl</a>
     <nav>
         <ul class="main__links">
             <li><a href = "#">Ranking</a></li>
+            <li><a href = "#">O projekcie</a></li>
+            <li><a href = "#">O nas</a></li>
         </ul>
     </nav>
+    <a class="zaglosuj" href="#"><button>Zagłosuj</button></a>
 
 </header>
 {##}
