@@ -11,6 +11,15 @@
     color: white;
 }
 
+#logo-footer {
+    color: white;
+    margin: 0;
+}
+
+.text-small {
+    margin-left: 0;
+}
+
 a {
     color: white;
 }
@@ -123,9 +132,9 @@ a {
 
 #video-container {
   overflow: hidden;
-  padding-top: 56.25%;
+  padding-top: 100%;
   position: relative;
-    margin-top: 5%;
+    /*margin-top: 5%;*/
 }
 
 #video {
@@ -151,7 +160,7 @@ a {
 }
 
 .section-4 {
-    margin: 10%;
+    margin: 5% 10% 5% 10%;
 }
 
 .text-dark {
@@ -260,6 +269,12 @@ height: 100%;
     color: white;
 }
 
+footer {
+    background-color: #111;
+    padding: 20px 20px 10px 20px;
+}
+
+
 /*@media screen and (max-width: 1442000px) and (min-width: 1442px)*/
 .main [data-module-template="promos"] {
     --content-height: 580px;
@@ -322,30 +337,13 @@ button{
 button:disabled {
     cursor:default
 }
-:focus{
-    outline:3px solid #c1e0fe;
-    outline:3px solid rgba(131,192,253,0.5);
-    outline-offset:1px
-}
-:focus[data-focus-method="mouse"]:not(input):not(textarea):not(select), :focus[data-focus-method="touch"]:not(input):not(textarea):not(select)  {
-    outline: none;
-}
-::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-@media print {
-    body, #main, #content {
-    color: #000;
-}
+
 a, a:link, a:visited {
     color: #000;
     text-decoration: none;
+
 }
-#globalheader, #globalfooter, #directorynav, #tabs, .noprint, .hide {
-    display: none;
-}
-}html {
+html {
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 106.25%;
  }
@@ -2149,18 +2147,8 @@ html[data-text-zoom="6"] .main [data-module-template="heroes"] {
 .main [data-module-template="heroes"] [data-unit-id="watch-series-4"] .unit-copy-wrapper .headline {
     margin-bottom: 12px;
 }
-@media only screen and (max-width: 735px) {
-    .main [data-module-template="heroes"] [data-unit-id="watch-series-4"] .unit-copy-wrapper .headline {
-    margin-bottom: 4px;
-}
-}.main [data-module-template="heroes"] [data-unit-id="iphone-xs"] .headline {
-    margin-bottom: 12px;
-}
-@media only screen and (max-width: 735px) {
-    .main [data-module-template="heroes"] [data-unit-id="iphone-xs"] .headline {
-    margin-bottom: 6px;
-}
-}.main [data-module-template="heroes"] [data-unit-id="iphone-xs"] .unit-copy-wrapper .subhead {
+
+.main [data-module-template="heroes"] [data-unit-id="iphone-xs"] .unit-copy-wrapper .subhead {
     font-size: 24px;
     line-height: 1.33349;
     font-weight: 400;
@@ -2313,17 +2301,7 @@ html[data-text-zoom="6"] .main [data-module-template="heroes"] {
     -webkit-transform: translatex(-50%);
     transform: translatex(-50%);
 }
-}.main [data-module-template="heroes"] [data-unit-id="iphone-xr"] .headline {
-    margin-bottom: 12px;
-}
-@media only screen and (max-width: 1068px) {
-    .main [data-module-template="heroes"] [data-unit-id="iphone-xr"] .headline {
-    margin-bottom: 11px;
-}
-}@media only screen and (max-width: 735px) {
-    .main [data-module-template="heroes"] [data-unit-id="iphone-xr"] .headline {
-    margin-bottom: 6px;
-}
+
 }.main [data-module-template="heroes"] [data-unit-id="iphone-xr"] .unit-copy-wrapper .subhead {
     font-size: 24px;
     line-height: 1.33349;
