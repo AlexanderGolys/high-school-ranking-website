@@ -528,6 +528,7 @@ img{
 }
 .card-img-overlay{
     width: 100%;
+    background-color: #22242A;
 }
 
 
@@ -553,4 +554,15 @@ body {
 
 .row {
     margin: 0 30px;
+}
+
+.about-text {
+    margin: 30px;
+    text-align: justify;
+    color: white;
+}
+
+h1 {
+    font-family: Rubik, sans-serif;
+    font-weight: bold;
 }
