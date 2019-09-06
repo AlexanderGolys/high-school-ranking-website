@@ -22,24 +22,24 @@
 <nav class="navbar navbar-default navbar-expand-lg c-navbar navbar-light">
     <div class="container-fluid">
         <div class="navbar-header pl-5">
-            <a class="navbar-brand logo" id="logo">uczniowski.pl</a>
+            <a class="navbar-brand logo" id="logo" href="/">uczniowski.pl</a>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarNav">
 
             <ul class="navbar-nav mr-auto main-links">
-                <li class="nav-item"><a href="#" class="nav-link" id="link-1">Ranking</a></li>
-                <li class="nav-item"><a href="#" class="nav-link" id="link-2">O nas</a></li>
-                <li class="nav-item"><a href="#" class="nav-link" id="link-3">O projekcie</a></li>
+                <li class="nav-item"><a href="/ranking" class="nav-link" id="link-1">Ranking</a></li>
+                <li class="nav-item"><a href="/about_us" class="nav-link" id="link-2">O nas</a></li>
+                <li class="nav-item"><a href="/about_project" class="nav-link" id="link-3">O projekcie</a></li>
             </ul>
-          <button class="vote-button">Zagłosuj</button>
+          <button class="vote-button" href="/vote">Zagłosuj</button>
         </div>
-
     </div>
 </nav>
+
 
  {% block content %}
  {% endblock %}
@@ -47,18 +47,17 @@
 <footer>
 
               <div class="container-fluid text-center">
-                  <a class="navbar-brand logo" id="logo-footer">uczniowski.pl</a>
+                  <a class="navbar-brand logo" id="logo-footer" href="/">uczniowski.pl</a>
                   <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">O zespole</a></li>
-              <li><a class="text-muted" href="#">O projekcie</a></li>
-              <li><a class="text-muted" href="#">Polityka prywatności</a></li>
+              <li><a class="text-muted" href="/about_us">O zespole</a></li>
+              <li><a class="text-muted" href="/about_project">O projekcie</a></li>
+              <li><a class="text-muted" href="/pp">Polityka prywatności</a></li>
             </ul>
                   <small class="d-block mb-3 text-muted">© Copyright 2019 uczniowski.pl</small>
           </div>
       </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-{##}
-{#<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>#}
-{#<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>#}
-{#<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>#}
 </html>
