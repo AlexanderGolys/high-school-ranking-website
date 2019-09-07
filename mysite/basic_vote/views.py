@@ -34,6 +34,10 @@ def home(request):
     return render(request, 'home.html')
 
 
+def about_us(request):
+    return render(request, 'about_us.html')
+
+
 @login_required
 def logged(request):
     return redirect('/vote')

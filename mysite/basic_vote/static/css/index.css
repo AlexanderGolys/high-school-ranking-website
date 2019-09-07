@@ -658,6 +658,7 @@ h1 {
     }
 }
 
+
 @media (min-width: 768px){
     .divider{
         margin-left: 47%;
@@ -672,10 +673,22 @@ h1 {
 }
 }
 
+@media (min-width: 992px){
+    .half-hr{
+        margin: .8em 45%;
+}
+}
+
 @media (min-width: 1200px){
     .divider{
         margin-left: 48%;
         margin-right: 48%;
+}
+}
+
+@media (min-width: 1200px){
+    .half-hr{
+        margin: .8em 46%;
 }
 }
 
@@ -770,4 +783,24 @@ hr {
 
 .mg-d-3rem {
     margin-bottom: 3rem;
+}
+
+.bg-black{
+    background-color: #111111;
+}
+
+.about-us-extended {
+    margin: 6rem 0;
+}
+
+.our-faces-container{
+    margin-top: 4rem;
+}
+
+.name {
+    text-align: center;
+}
+
+.long-des {
+    margin: 0 1.5rem;
 }
