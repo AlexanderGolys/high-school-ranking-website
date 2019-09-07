@@ -98,6 +98,10 @@ a {
     margin: 0!important;
 }
 
+.no-margin {
+    margin:0;
+}
+
 .jumbo-button {
     background-color: #fafafa;
     border: 1px solid #f4623a;
