@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+        {% block head %}
+            <title>
+            Zagłosuj!
+            </title>
+         {% endblock %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+    <form method="POST"> {% csrf_token %}
+        {% for f in form %}
+            {% if forloop.counter == 1 %}
+                {{ f.errors }}
+                {{ f.label_tag }}
+                <input type="text" name="school" required="" id="id_school" list="schools"/>
+                <datalist id="schools">
+                    {% for school in schools %}
+                        <option value="{{ school.name }}">{{ school.name }}</option>
+                    {% endfor %}
+                </datalist>
+            {% else %}
+            <p>
+                {{ f.errors }}
+                {{ f.label_tag }}
+                {{ f }}
+            </p>
+            {% endif %}
+        {% endfor %}
+        <input type="submit" value="Save"/>
+    </form>
+{% endblock %}
