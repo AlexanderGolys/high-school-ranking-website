@@ -30,5 +30,6 @@ urlpatterns = [
     path("", views.home, name="home"),
     path("vote", views.vote_submit_view, name="vote"),
     path("about_us/", views.about_us, name="about_us"),
+    path("about_project", views.about_project, name="about_project")
 ]
 

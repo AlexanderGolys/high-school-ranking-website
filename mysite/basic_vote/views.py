@@ -38,6 +38,10 @@ def about_us(request):
     return render(request, 'about_us.html')
 
 
+def about_project(request):
+    return render(request, 'about_project.html')
+
+
 @login_required
 def logged(request):
     return redirect('/vote')

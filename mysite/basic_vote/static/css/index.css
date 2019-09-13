@@ -804,3 +804,15 @@ hr {
 .long-des {
     margin: 0 1.5rem;
 }
+
+.container-about-project{
+    height: calc(100% - 45px);
+    background-color: white;
+}
+
+
+@media (min-width: 992px){
+    .container-about-project{
+        height: calc(100% - 63px);
+}
+}
