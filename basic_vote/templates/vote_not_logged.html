@@ -1,18 +1,29 @@
+
 {% extends 'base.html' %}
-        {% block head %}
-            <title>
-            Zaloguj się
-            </title>
-         {% endblock %}
-    {% block title %} Zaloguj się, by wypełnić ankietę {% endblock %}
-    {% block content %}
-    <div class="row">
-        <div class="col-md-8 mx-auto social-container my-2 order-md-1">
-            <button class="btn btn-primary mb-2">
-                <a href="{% url 'social:begin' 'facebook' %}">zaloguj </a>
-            </button>
-            tu zablokowana ankieta
-            user: {{ user.username }}
-        </div>
-    </div>
-    {% endblock %}
+{% block head %}
+    <title>Zaloguj się</title>
+{% endblock %}
+
+{% block content %}
+
+    <section class="container-fluid container-about-project bg-light section-fb-login">
+        <h2 class="about-header">Zaloguj się przez Facebooka, by wypełnić ankietę</h2>
+            <hr class="divider border-blue">
+            <div class="container">
+               <div class="row justify-content-center">
+                   <div class="col-lg-8 text-center">
+
+                       <p class="text-muted mb-4">Dbając o wiarygodność naszego rankingu nie chcemy, aby jedna osoba wypełniała ankietę więcej
+                       niż jeden raz. Z tego powodu prosimy o zalogowanie przez Facebooka, co pozwoli nam to weryfikować.
+                       Nie potrzebne są nam do tego twoje dane osobowe - nie trzymamy w bazie nawet twojego imienia i nazwiska.
+                       Korzystając z uczniowski.pl pozostajesz całkowicie anonimowy i nawet gdybyśmy chcieli dowiedzieć się kim jesteś,
+                       nie zapewniliśmy sobie takiej możliwości. Dzięki temu możesz całkowicie szczerze wyrażać swoje opinie
+                       o placówkach edukacyjnych bez obawy o kłopoty ze strony nauczycieli i dyrekcji.</p>
+                       <a class="btn btn-xl js-scroll-trigger btn-more-about btn-facebook-login" href="{% url 'social:begin' 'facebook' %}" role="button">Zaloguj i zagłosuj</a>
+
+                   </div>
+               </div>
+            </div>
+    </section>
+
+{% endblock %}

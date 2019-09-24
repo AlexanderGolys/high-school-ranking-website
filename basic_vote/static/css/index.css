@@ -639,6 +639,11 @@ h1 {
     border-color: #f4623a;
 }
 
+.border-blue {
+    border-color: #1778F2;
+}
+
+
 .border-gray {
     border-color: #111111;
 }
@@ -815,4 +820,65 @@ hr {
     .container-about-project{
         height: calc(100% - 63px);
 }
+}
+
+.btn-facebook-login{
+    /*background-color: #f4623a;*/
+    background-color: white;
+    border: #1778F2 solid 3px;
+    text-align: center;
+}
+
+.btn-facebook-login:hover{
+    /*background-color: #f4623a;*/
+    background-color: #1778F2;
+    border: #1778F2 solid 3px;
+    text-align: center;
+}
+
+.bg-light{
+    background-color: #f8f9fa!important;
+}
+
+.section-fb-login {
+    padding-top: 3rem;
+}
+
+.section-fb-login h2 {
+    font-size: 1.5rem;
+}
+
+.section-fb-login div div div p {
+    font-size: 13px;
+}
+
+.section-fb-login div div div a {
+    padding: 1rem 1.75rem;
+    font-size: .75rem;
+}
+
+
+@media (min-width: 576px) {
+    .section-fb-login {
+        padding-top: 11rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .section-fb-login h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .section-fb-login div div div p {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 576px) {
+    .section-fb-login div div div a {
+        font-size: 1rem;
+        padding: 1.25rem 2.25rem;
+    }
 }

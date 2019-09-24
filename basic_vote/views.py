@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from basic_vote.models import CustomUser, School
+from .models import CustomUser, School
 from .forms import VoteForm
 from django.shortcuts import redirect
 
