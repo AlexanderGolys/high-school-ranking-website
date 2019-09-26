@@ -9,6 +9,7 @@
 {% block content %}
     <form method="POST"> {% csrf_token %}
         {% for f in form %}
+            <div class="q{{ forloop.counter }}">
             {% if forloop.counter == 1 %}
                 {{ f.errors }}
                 {{ f.label_tag }}
@@ -25,6 +26,7 @@
                 {{ f }}
             </p>
             {% endif %}
+            </div>
         {% endfor %}
         <input type="submit" value="Save"/>
     </form>
